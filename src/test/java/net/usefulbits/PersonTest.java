@@ -6,7 +6,6 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class PersonTest {
-
     @Test
     public void Test1() {
         System.out.println("##teamcity[blockOpened name='<CreateConnection>']");
