@@ -10,7 +10,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>mvn2-spring-open</name>
 	<dependencies>
-		
+		v
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
