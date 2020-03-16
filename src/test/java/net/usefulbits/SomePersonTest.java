@@ -60,15 +60,6 @@ public class SomePersonTest {
     // }
 
     // @Test
-    // @Ignore("long name ü")
-    // public void TestTest() {
-    //     System.out.println("##teamcity[blockOpened name='some_block']");
-
-    //     assertEquals("David", "David");
-    //     assertEquals(28, 29);
-    // }
-
-    // @Test
     // @Ignore("long name Ä")
     // public void TestSomeFunction() {
     //     System.out.println("##teamcity[blockClosed name='some_block']");
