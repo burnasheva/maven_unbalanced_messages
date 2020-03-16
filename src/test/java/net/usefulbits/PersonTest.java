@@ -15,11 +15,7 @@ public class PersonTest {
         System.out.println("##teamcity[blockOpened name='<UserRolesTests.BulkImportUsersFromFile>']");
         System.out.println("##teamcity[blockOpened name='<ImportUsersFromFile>']");
         
-        try{
-            Thread.sleep(10000);
-        } catch (InterruptedException ie){
-            System.out.println("Something went wrong");
-        }
+        
         System.out.println("##teamcity[blockClosed name='some_block']");
 
 
@@ -72,11 +68,7 @@ public class PersonTest {
         System.out.println("##teamcity[blockClosed name='<CreateNewUserRole>']");
 
 
-        try{
-            Thread.sleep(10000);
-        } catch (InterruptedException ie){
-            System.out.println("Something went wrong");
-        }
+        
         System.out.println("##teamcity[blockClosed name='some_block']");
 
 
@@ -98,11 +90,7 @@ public class PersonTest {
 
     @Test
     public void TestDifferentLogic() {
-        try{
-            Thread.sleep(10000);
-        } catch (InterruptedException ie){
-            System.out.println("Something went wrong");
-        }
+        
         System.out.println("##teamcity[blockClosed name='some_block']");
 
 
@@ -124,11 +112,7 @@ public class PersonTest {
 
     @Test
     public void TestCalculator() {
-        try{
-            Thread.sleep(10000);
-        } catch (InterruptedException ie){
-            System.out.println("Something went wrong");
-        }
+        
         System.out.println("##teamcity[blockClosed name='some_block']");
 
         System.out.println("##teamcity[blockOpened name='some_block_2']");
@@ -190,7 +174,7 @@ public class PersonTest {
     }
 
     @Test
-    //@Ignore("ignore test with simple name")
+    @Ignore("ignore test with simple name")
     public void shouldBeIgnored(){
         assertTrue(false);
     }
