@@ -26,7 +26,6 @@ public class SomePersonTest {
 
         System.out.println("##teamcity[blockOpened name='some_block_2']");
 
-
         assertEquals(3, 3);
 
         assertEquals("Name not saved correctly", "David", "David");
