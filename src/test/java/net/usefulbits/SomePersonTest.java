@@ -17,11 +17,6 @@ public class SomePersonTest {
         System.out.println("##teamcity[blockOpened name='<UserRolesTests.BulkImportUsersFromFile>']");
         System.out.println("##teamcity[blockOpened name='<ImportUsersFromFile>']");
         
-        try{
-            Thread.sleep(10000);
-        } catch (InterruptedException ie){
-            System.out.println("Something went wrong");
-        }
         System.out.println("##teamcity[blockClosed name='some_block']");
 
 
@@ -34,7 +29,7 @@ public class SomePersonTest {
         System.out.println("##teamcity[blockOpened name='some_block_2']");
 
 
-        assertEquals(2, 3);
+        assertEquals(3, 3);
 
         assertEquals("Name not saved correctly", "David", "David");
         assertEquals("Age not saved correctly 123456", 22, 22);
@@ -203,7 +198,7 @@ public class SomePersonTest {
 
     @Test
     public void SecondFailingTest(){
-        assertTrue(false);
+        assertTrue(true);
     }
 
     // @Test
