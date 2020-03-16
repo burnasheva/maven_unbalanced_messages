@@ -17,7 +17,6 @@ public class SomePersonTest {
         
         System.out.println("##teamcity[blockClosed name='some_block']");
 
-
         System.out.println("word");
         System.err.println("word");
 
