@@ -34,32 +34,6 @@ public class SomePersonTest {
     }
 
     // @Test
-    // public void TestBlock2() {
-    //     try{
-    //         Thread.sleep(10000);
-    //     } catch (InterruptedException ie){
-
-    //     }
-    //     System.out.println("##teamcity[blockClosed name='some_block']");
-
-
-    //     System.out.println("word");
-    //     System.err.println("word");
-
-    //     System.out.println("http://user:word@jetbrains.com");
-    //     System.err.println("http://user:word@jetbrains.com");
-
-    //     System.out.println("##teamcity[blockOpened name='some_block_2']");
-
-
-    //     assertEquals(2, 2);
-
-    //     assertEquals("Name not saved correctly", "David", "David");
-    //     assertEquals("Age not saved correctly 123456", 22, 22);
-    //     System.out.println("##teamcity[blockClosed name='some_block_3']");
-    // }
-
-    // @Test
     // public void TestBlock5() {
     //     try{
     //         Thread.sleep(10000);
