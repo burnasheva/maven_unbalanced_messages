@@ -1,6 +1,7 @@
-import jetbrains.buildServer.configs.kotlin.v2018_1.*
-import jetbrains.buildServer.configs.kotlin.v2018_1.buildSteps.maven
-import jetbrains.buildServer.configs.kotlin.v2018_1.buildSteps.script
+import jetbrains.buildServer.configs.kotlin.v2019_2.*
+import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.MavenBuildStep
+import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.maven
+import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.script
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -24,15 +25,28 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 'Debug' option is available in the context menu for the task.
 */
 
-version = "2018.1"
+version = "2020.1"
 
 project {
 
     buildType(RunTests)
+
+    features {
+        feature {
+            id = "PROJECT_EXT_69"
+            type = "OAuthProvider"
+            param("clientId", "2280447103.1138299994726")
+            param("secure:clientSecret", "credentialsJSON:6e14cfcf-ad9a-42d7-bc27-6cc0dbdade59")
+            param("displayName", "Slack Test")
+            param("secure:token", "credentialsJSON:0f24ef40-f107-4c0b-8bcf-0ddec3c92b25")
+            param("providerType", "slackConnection")
+        }
+    }
 }
 
 object RunTests : BuildType({
     name = "run tests"
+    paused = true
 
     vcs {
         root(DslContext.settingsRoot)
@@ -43,11 +57,15 @@ object RunTests : BuildType({
             name = "hello world"
             enabled = false
             scriptContent = "echo hello world"
+            param("teamcity.runAs.windowsIntegrityLlevel", "auto")
+            param("teamcity.runAs.loggingLevel", "off")
         }
         maven {
             goals = "clean test"
             runnerArgs = "-Dmaven.test.failure.ignore=true"
-            mavenVersion = defaultProvidedVersion()
+            localRepoScope = MavenBuildStep.RepositoryScope.MAVEN_DEFAULT
+            param("teamcity.runAs.windowsIntegrityLlevel", "auto")
+            param("teamcity.runAs.loggingLevel", "off")
         }
     }
 })
