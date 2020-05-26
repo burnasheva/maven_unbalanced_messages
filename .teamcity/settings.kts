@@ -1,4 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
+import jetbrains.buildServer.configs.kotlin.v2019_2.buildFeatures.notifications
 import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.MavenBuildStep
 import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.maven
 import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.script
@@ -66,6 +67,20 @@ object RunTests : BuildType({
             localRepoScope = MavenBuildStep.RepositoryScope.MAVEN_DEFAULT
             param("teamcity.runAs.windowsIntegrityLlevel", "auto")
             param("teamcity.runAs.loggingLevel", "off")
+        }
+    }
+
+
+    features {
+        notifications {
+            notifier = "jbSlackNotifier"
+            buildStarted = true
+            buildFailedToStart = true
+            buildFailed = true
+            buildFinishedSuccessfully = true
+            buildProbablyHanging = true
+            param("plugin:notificator:jbSlackNotifier:connection", "PROJECT_EXT_69")
+            param("plugin:notificator:jbSlackNotifier:channel", "U0AKGLCJC")
         }
     }
 })
