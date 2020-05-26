@@ -33,10 +33,12 @@ changeBuildType(RelativeId("RunTests")) {
     }
     steps {
         update<ScriptBuildStep>(0) {
+            clearConditions()
             param("teamcity.runAs.windowsIntegrityLlevel", "auto")
             param("teamcity.runAs.loggingLevel", "off")
         }
         update<MavenBuildStep>(1) {
+            clearConditions()
             param("teamcity.runAs.windowsIntegrityLlevel", "auto")
             param("teamcity.runAs.loggingLevel", "off")
         }
