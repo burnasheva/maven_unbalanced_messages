@@ -6,8 +6,6 @@
 	<packaging>jar</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	
-	
-	
 	<name>mvn2-spring-open</name>
 	<dependencies>
 		<dependency>
