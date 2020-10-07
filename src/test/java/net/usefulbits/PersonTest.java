@@ -115,7 +115,7 @@ public class PersonTest {
         System.out.println("##teamcity[blockOpened name='some_block_2']");
 
 
-        assertEquals(2, 2);
+        assertEquals(2, 4);
 
         assertEquals("Name not saved correctly", "David", "David");
         assertEquals("Age not saved correctly 123456", 22, 22);
