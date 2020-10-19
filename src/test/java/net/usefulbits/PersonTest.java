@@ -6,6 +6,8 @@ import org.junit.Test;
 
 public class PersonTest {
 
+    private static String TEAMCITY_VERSION = "TEAMCITY_VERSION";
+
     @Test
     public void Test1() {
         System.out.println("##teamcity[blockOpened name='<CreateConnection>']");
@@ -16,7 +18,9 @@ public class PersonTest {
         System.out.println("##teamcity[blockOpened name='<ImportUsersFromFile>']");
         
         try{
-            Thread.sleep(10000);
+            if (System.getenv(TEAMCITY_VERSION) != null || !System.getenv("TEAMCITY_VERSION").isEmpty()){
+                Thread.sleep(10000);
+            }
         } catch (InterruptedException ie){
             System.out.println("Something went wrong");
         }
@@ -73,7 +77,9 @@ public class PersonTest {
 
 
         try{
-            Thread.sleep(10000);
+            if (System.getenv(TEAMCITY_VERSION) != null || !System.getenv("TEAMCITY_VERSION").isEmpty()){
+                Thread.sleep(10000);
+            }
         } catch (InterruptedException ie){
             System.out.println("Something went wrong");
         }
@@ -98,8 +104,11 @@ public class PersonTest {
 
     @Test
     public void TestDifferentLogic() {
+
         try{
-            Thread.sleep(10000);
+            if (System.getenv(TEAMCITY_VERSION) != null || !System.getenv("TEAMCITY_VERSION").isEmpty()){
+                Thread.sleep(10000);
+            }
         } catch (InterruptedException ie){
             System.out.println("Something went wrong");
         }
@@ -126,7 +135,9 @@ public class PersonTest {
     @Test
     public void TestCalculator() {
         try{
-            Thread.sleep(10000);
+            if (System.getenv(TEAMCITY_VERSION) != null || !System.getenv("TEAMCITY_VERSION").isEmpty()){
+                Thread.sleep(10000);
+            }
         } catch (InterruptedException ie){
             System.out.println("Something went wrong");
         }

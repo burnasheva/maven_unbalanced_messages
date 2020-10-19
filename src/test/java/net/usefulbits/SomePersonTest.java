@@ -3,9 +3,9 @@ package net.usefulbits;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
-
-
 public class SomePersonTest {
+
+    private static String TEAMCITY_VERSION = "TEAMCITY_VERSION";
 
     @Test
     public void Test1() {
@@ -18,7 +18,9 @@ public class SomePersonTest {
         System.out.println("##teamcity[blockOpened name='<ImportUsersFromFile>']");
         
         try{
-            Thread.sleep(10000);
+            if (System.getenv(TEAMCITY_VERSION) != null || !System.getenv("TEAMCITY_VERSION").isEmpty()){
+                Thread.sleep(10000);
+            }
         } catch (InterruptedException ie){
             System.out.println("Something went wrong");
         }
