@@ -10,6 +10,7 @@ public class RerunTest {
     @Test
     public void RandomlyPassTest() {
         MockNeat random = MockNeat.threadLocal();
-        assertTrue(random.bools().probability(20.00).val());
+        assertEquals(true,
+                random.bools().probability(30.00).val());
     }
 }
