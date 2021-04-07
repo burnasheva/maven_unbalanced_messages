@@ -16,6 +16,7 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
+			
 			<groupId>net.andreinc.mockneat</groupId>
 			<artifactId>mockneat</artifactId>
 			<version>0.3.0</version>
