@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <project>
   <modelVersion>4.0.0</modelVersion>
-  <name>MavenUnbalancedMessages Config DSL Script</name>
-  <groupId>MavenUnbalancedMessages</groupId>
-  <artifactId>MavenUnbalancedMessages_dsl</artifactId>
+  <name>ProjectFromScratch Config DSL Script</name>
+  <groupId>ProjectFromScratch</groupId>
+  <artifactId>ProjectFromScratch_dsl</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <parent>
