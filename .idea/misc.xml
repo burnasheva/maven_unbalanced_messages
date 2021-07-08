@@ -4,6 +4,8 @@
     <properties class="javax.swing.AbstractButton">
       <property name="hideActionText" class="java.lang.Boolean" />
     </properties>
+    
+    
     <properties class="javax.swing.JComponent">
       <property name="html.disable" class="java.lang.Boolean" />
     </properties>
