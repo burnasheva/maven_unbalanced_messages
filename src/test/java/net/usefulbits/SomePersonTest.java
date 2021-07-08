@@ -5,17 +5,22 @@ import org.junit.Test;
 
 public class SomePersonTest {
 
+    private static String TEAMCITY_VERSION = "TEAMCITY_VERSION";
+
     @Test
     public void Test1() {
         System.out.println("##teamcity[blockOpened name='<CreateConnection>']");
         System.out.println("Some output");
         System.out.println("##teamcity[blockClosed name='<CreateConnection>']");
+        
         System.out.println("##teamcity[blockClosed name='<RiskReasonsTests.DeleteRiskReason>']");
         System.out.println("##teamcity[blockOpened name='<UserRolesTests.BulkImportUsersFromFile>']");
         System.out.println("##teamcity[blockOpened name='<ImportUsersFromFile>']");
         
         try{
-            Thread.sleep(10000);
+            if (System.getenv(TEAMCITY_VERSION) != null || !System.getenv("TEAMCITY_VERSION").isEmpty()){
+                Thread.sleep(10000);
+            }
         } catch (InterruptedException ie){
             System.out.println("Something went wrong");
         }
@@ -211,9 +216,9 @@ public class SomePersonTest {
     //     assertFalse (true);
     // }
 
-    // @Test
+    @Test
     // @Ignore("ignore test with simple name")
-    // public void shouldBeIgnored(){
-    //     assertTrue(false);
-    // }
+    public void shouldBeIgnored(){
+        assertTrue(false);
+    }
 }
