@@ -5,6 +5,7 @@
 	<groupId>mvn2-spring-openjpa</groupId>
 	<artifactId>mvn2-spring-openjpa</artifactId>
 	<packaging>jar</packaging>
+	
 	<version>0.0.1-SNAPSHOT</version>
 	<name>mvn2-spring-open</name>
 	
@@ -33,8 +34,7 @@
 		</resources>
 		<testResources>
 			<testResource>
-				<directory>${project.basedir}/src/test/resources
-				</directory>
+				<directory>${project.basedir}/src/test/resources</directory>
 				<filtering>true</filtering>
 			</testResource>
 		</testResources>
