@@ -31,7 +31,7 @@ public class PersonTest {
         System.err.println("http://user:word@jetbrains.com");
 
         System.out.println("##teamcity[blockOpened name='some_block_2']");
-
+        System.out.println("Durchführung"); 
 
         assertEquals(2, 2);
 
