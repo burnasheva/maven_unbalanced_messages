@@ -11,6 +11,7 @@ public class SomePersonTest {
     public void Test1() {
         System.out.println("##teamcity[blockOpened name='<CreateConnection>']");
         System.out.println("Some output");
+        
         System.out.println("##teamcity[blockClosed name='<CreateConnection>']");
         
         System.out.println("##teamcity[blockClosed name='<RiskReasonsTests.DeleteRiskReason>']");
