@@ -47,6 +47,7 @@ object RunTests : BuildType({
 
     triggers {
         vcs {
+            enabled = false
         }
     }
 })
