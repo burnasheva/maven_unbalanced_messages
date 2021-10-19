@@ -19,7 +19,7 @@ public class PersonTest {
         
         try{
             if (System.getenv(TEAMCITY_VERSION) != null || !System.getenv("TEAMCITY_VERSION").isEmpty()){
-                Thread.sleep(10000);
+                Thread.sleep(500);
             }
         } catch (InterruptedException ie){
             System.out.println("Something went wrong");
