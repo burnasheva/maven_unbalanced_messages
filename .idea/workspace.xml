@@ -48,10 +48,7 @@
     </treeState>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ee48abb-fff8-4d9b-80ce-3e9c34927303" name="Default" comment="som comment">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/touch-file" beforeDir="false" afterPath="$PROJECT_DIR$/touch-file" afterDir="false" />
-    </list>
+    <list default="true" id="8ee48abb-fff8-4d9b-80ce-3e9c34927303" name="Default" comment="some comment" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -395,7 +392,7 @@
       <workItem from="1634566162726" duration="397000" />
       <workItem from="1634566594893" duration="1157000" />
       <workItem from="1634633993476" duration="46000" />
-      <workItem from="1634634077312" duration="594000" />
+      <workItem from="1634634077312" duration="1221000" />
     </task>
     <task id="LOCAL-00001" summary="som comment">
       <created>1634566295972</created>
@@ -462,7 +459,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="som comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="som comment" />
+    <MESSAGE value="some comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="some comment" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
