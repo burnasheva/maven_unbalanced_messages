@@ -13,20 +13,10 @@
       <buildParameter key="a" value="aa" />
     </CUSTOMIZATION_ELEMENT>
     <treeState key="changes">
-      <expandedPath>
-        <pathElement>
-          <option name="myNodeId" value="1" />
-          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.ChangesGroupDescriptor" />
-        </pathElement>
-      </expandedPath>
       <selectedPath>
         <pathElement>
-          <option name="myNodeId" value="1" />
-          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.ChangesGroupDescriptor" />
-        </pathElement>
-        <pathElement>
-          <option name="myNodeId" value="4550" />
-          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.VcsModificationDescriptor" />
+          <option name="myNodeId" value="helperText" />
+          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.LinkedTextDescriptor" />
         </pathElement>
       </selectedPath>
     </treeState>
@@ -59,11 +49,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ee48abb-fff8-4d9b-80ce-3e9c34927303" name="Default" comment="som comment">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvn2-spring-openjpa.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_8_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/usefulbits/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/usefulbits/PersonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/touch-file" beforeDir="false" afterPath="$PROJECT_DIR$/touch-file" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,6 +155,11 @@
         </subPane>
       </pane>
     </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -402,6 +394,8 @@
       <workItem from="1519214137440" duration="259000" />
       <workItem from="1634566162726" duration="397000" />
       <workItem from="1634566594893" duration="1157000" />
+      <workItem from="1634633993476" duration="46000" />
+      <workItem from="1634634077312" duration="594000" />
     </task>
     <task id="LOCAL-00001" summary="som comment">
       <created>1634566295972</created>
