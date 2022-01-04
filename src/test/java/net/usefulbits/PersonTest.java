@@ -16,13 +16,7 @@ public class PersonTest {
         System.out.println("##teamcity[blockClosed name='<RiskReasonsTests.DeleteRiskReason>']");
         System.out.println("##teamcity[blockOpened name='<UserRolesTests.BulkImportUsersFromFile>']");
         System.out.println("##teamcity[blockOpened name='<ImportUsersFromFile>']");
-        
-        try{
-            if (System.getenv(TEAMCITY_VERSION) != null || !System.getenv("TEAMCITY_VERSION").isEmpty()){
-            }
-        } catch (InterruptedException ie){
-            System.out.println("Something went wrong");
-        }
+       
         System.out.println("##teamcity[blockClosed name='some_block']");
 
 
