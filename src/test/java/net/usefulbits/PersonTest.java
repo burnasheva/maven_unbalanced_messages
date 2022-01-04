@@ -19,7 +19,6 @@ public class PersonTest {
         
         try{
             if (System.getenv(TEAMCITY_VERSION) != null || !System.getenv("TEAMCITY_VERSION").isEmpty()){
-                Thread.sleep(500);
             }
         } catch (InterruptedException ie){
             System.out.println("Something went wrong");
@@ -36,7 +35,7 @@ public class PersonTest {
         System.out.println("##teamcity[blockOpened name='some_block_2']");
         System.out.println("Durchführungvermögen"); 
 
-        assertEquals(2, 2);
+        assertEquals(2, 3);
 
         assertEquals("Name not saved correctly", "David", "David");
         assertEquals("Age not saved correctly 123456", 22, 22);
