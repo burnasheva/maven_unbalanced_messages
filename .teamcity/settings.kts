@@ -1,6 +1,7 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
 import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.maven
 import jetbrains.buildServer.configs.kotlin.v2019_2.triggers.vcs
+import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.GitVcsRoot
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -24,18 +25,20 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 'Debug' option is available in the context menu for the task.
 */
 
-version = "2021.1"
+version = "2020.2"
 
 project {
 
-    buildType(RunTests)
+    vcsRoot(HttpsGithubComBurnashevaMavenUnbalancedMessagesGitRefsHeadsMaster)
+
+    buildType(BuildProject)
 }
 
-object RunTests : BuildType({
-    name = "run tests"
+object BuildProject : BuildType({
+    name = "build project"
 
     vcs {
-        root(DslContext.settingsRoot)
+        root(HttpsGithubComBurnashevaMavenUnbalancedMessagesGitRefsHeadsMaster)
     }
 
     steps {
@@ -47,7 +50,17 @@ object RunTests : BuildType({
 
     triggers {
         vcs {
-            enabled = false
         }
+    }
+})
+
+object HttpsGithubComBurnashevaMavenUnbalancedMessagesGitRefsHeadsMaster : GitVcsRoot({
+    name = "https://github.com/burnasheva/maven_unbalanced_messages.git#refs/heads/master"
+    url = "https://github.com/burnasheva/maven_unbalanced_messages.git"
+    branch = "refs/heads/master"
+    branchSpec = "refs/heads/*"
+    authMethod = password {
+        userName = "burnasheva"
+        password = "credentialsJSON:129576e4-c3ae-4675-a9bf-aaf179c9e8d2"
     }
 })
