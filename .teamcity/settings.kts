@@ -35,7 +35,7 @@ project {
 }
 
 object BuildProject : BuildType({
-    name = "build project"
+    name = "build project (new name)"
 
     vcs {
         root(HttpsGithubComBurnashevaMavenUnbalancedMessagesGitRefsHeadsMaster)
