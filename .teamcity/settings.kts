@@ -30,6 +30,7 @@ version = "2020.2"
 project {
 
     vcsRoot(HttpsGithubComBurnashevaMavenUnbalancedMessagesGitRefsHeadsMaster)
+    vcsRoot(VersionedSettingsSecondRoot)
 
     buildType(BuildProject)
 }
@@ -59,6 +60,20 @@ object HttpsGithubComBurnashevaMavenUnbalancedMessagesGitRefsHeadsMaster : GitVc
     url = "https://github.com/burnasheva/maven_unbalanced_messages.git"
     branch = "refs/heads/master"
     branchSpec = "refs/heads/*"
+    authMethod = password {
+        userName = "burnasheva"
+        password = "credentialsJSON:129576e4-c3ae-4675-a9bf-aaf179c9e8d2"
+    }
+})
+
+object VersionedSettingsSecondRoot : GitVcsRoot({
+    name = "versioned settings second root"
+    url = "https://github.com/burnasheva/maven_unbalanced_messages"
+    branch = "refs/heads/dsl_settings_root"
+    branchSpec = """
+        +:refs/heads/(dsl_settings_root)
+        +:refs/heads/(burnasheva/*)
+    """.trimIndent()
     authMethod = password {
         userName = "burnasheva"
         password = "credentialsJSON:129576e4-c3ae-4675-a9bf-aaf179c9e8d2"
