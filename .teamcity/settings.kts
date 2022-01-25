@@ -43,7 +43,7 @@ object BuildProject : BuildType({
 
     steps {
         maven {
-            goals = "clean test"
+            goals = "clean compile"
             runnerArgs = "-Dmaven.test.failure.ignore=true"
         }
     }
