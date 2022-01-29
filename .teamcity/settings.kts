@@ -37,6 +37,8 @@ project {
 object BuildProject : BuildType({
     name = "build project (new name)"
 
+    artifactRules = "*.txt"
+
     vcs {
         root(HttpsGithubComBurnashevaMavenUnbalancedMessagesGitRefsHeadsMaster)
     }
@@ -64,4 +66,3 @@ object HttpsGithubComBurnashevaMavenUnbalancedMessagesGitRefsHeadsMaster : GitVc
         password = "credentialsJSON:129576e4-c3ae-4675-a9bf-aaf179c9e8d2"
     }
 })
-
