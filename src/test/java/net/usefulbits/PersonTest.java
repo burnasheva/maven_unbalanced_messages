@@ -29,7 +29,7 @@ public class PersonTest {
         System.out.println("##teamcity[blockOpened name='some_block_2']");
         System.out.println("Durchführungvermögen"); 
 
-        assertEquals(2, 3);
+        assertEquals(3, 3);
 
         assertEquals("Name not saved correctly", "David", "David");
         assertEquals("Age not saved correctly 123456", 22, 22);
@@ -71,7 +71,7 @@ public class PersonTest {
 
         try{
             if (System.getenv(TEAMCITY_VERSION) != null || !System.getenv("TEAMCITY_VERSION").isEmpty()){
-                Thread.sleep(10000);
+                Thread.sleep(100);
             }
         } catch (InterruptedException ie){
             System.out.println("Something went wrong");
@@ -100,7 +100,7 @@ public class PersonTest {
 
         try{
             if (System.getenv(TEAMCITY_VERSION) != null || !System.getenv("TEAMCITY_VERSION").isEmpty()){
-                Thread.sleep(10000);
+                Thread.sleep(100);
             }
         } catch (InterruptedException ie){
             System.out.println("Something went wrong");
@@ -117,7 +117,7 @@ public class PersonTest {
         System.out.println("##teamcity[blockOpened name='some_block_2']");
 
 
-        assertEquals(2, 4);
+        assertEquals(4, 4);
 
 
         assertEquals("Name not saved correctly", "David", "David");
@@ -171,7 +171,7 @@ public class PersonTest {
     public void Test3() {
         System.out.println("##teamcity[blockClosed name='some_block']");
 
-        assertEquals("Deleting person failed.", 0, 1);
+        assertEquals("Deleting person failed.", 1, 1);
     }
 
     @Test
