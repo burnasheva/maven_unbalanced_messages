@@ -182,7 +182,7 @@ public class SomePersonTest {
     // }
 
     @Test
-    @Ignore("long name ü")
+    //@Ignore("long name ü")
     public void TestTest() {
        System.out.println("##teamcity[blockOpened name='some_block']");
 
