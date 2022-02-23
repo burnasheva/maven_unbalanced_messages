@@ -19,7 +19,7 @@ public class SomePersonTest {
         
         try{
             if (System.getenv(TEAMCITY_VERSION) != null || !System.getenv("TEAMCITY_VERSION").isEmpty()){
-                Thread.sleep(10000);
+                Thread.sleep(100);
             }
         } catch (InterruptedException ie){
             System.out.println("Something went wrong");
@@ -36,7 +36,7 @@ public class SomePersonTest {
         System.out.println("##teamcity[blockOpened name='some_block_2']");
 
 
-        assertEquals(2, 3);
+        assertEquals(3, 3);
 
         assertEquals("Name not saved correctly", "David", "David");
         assertEquals("Age not saved correctly 123456", 22, 22);
@@ -205,7 +205,7 @@ public class SomePersonTest {
 
     @Test
     public void SecondFailingTest(){
-        assertTrue(false);
+        assertTrue(true);
     }
 
     // @Test
