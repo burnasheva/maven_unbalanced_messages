@@ -181,14 +181,14 @@ public class SomePersonTest {
     //     System.out.println("##teamcity[blockClosed name='some_block_3']");
     // }
 
-    // @Test
-    // @Ignore("long name ü")
-    // public void TestTest() {
-    //     System.out.println("##teamcity[blockOpened name='some_block']");
+    @Test
+    @Ignore("long name ü")
+    public void TestTest() {
+       System.out.println("##teamcity[blockOpened name='some_block']");
 
-    //     assertEquals("David", "David");
-    //     assertEquals(28, 29);
-    // }
+       assertEquals("David", "David");
+       assertEquals(28, 29);
+    }
 
     // @Test
     // @Ignore("long name Ä")
