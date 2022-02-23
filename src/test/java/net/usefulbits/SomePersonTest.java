@@ -200,7 +200,7 @@ public class SomePersonTest {
 
     @Test
     public void TestAnotherFunction(){
-        assertTrue(true);
+        assertTrue(false);
     }
 
     @Test
