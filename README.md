@@ -9,7 +9,4 @@ last line
 !
 !
 
-
-
-
 Check CSP
