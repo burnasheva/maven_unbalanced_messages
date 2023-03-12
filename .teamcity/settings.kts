@@ -6,12 +6,12 @@ version = "2021.1"
 
 project {
     buildType(RunTests)
-    id = "MavenUnbalancedMessages"
+    id("MavenUnbalancedMessages")
 }
 
 object RunTests : BuildType({
     name = "run tests"
-    id = "MavenUnbalancedMessages_RunTests"
+    id("MavenUnbalancedMessages_RunTests")
 
     vcs {
         root(DslContext.settingsRoot)
