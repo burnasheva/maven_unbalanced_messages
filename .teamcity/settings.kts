@@ -15,6 +15,8 @@ template(), and subProject() methods respectively.
 
 
 
+
+
 To debug settings scripts in command-line, run the
 
     mvnDebug org.jetbrains.teamcity:teamcity-configs-maven-plugin:generate
