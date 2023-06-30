@@ -29,6 +29,8 @@ version = "2018.1"
 project {
 
     buildType(RunTests)
+
+
 }
 
 object RunTests : BuildType({
