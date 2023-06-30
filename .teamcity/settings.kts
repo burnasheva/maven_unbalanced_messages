@@ -48,6 +48,7 @@ object RunTests : BuildType({
             goals = "clean test"
             runnerArgs = "-Dmaven.test.failure.ignore=true"
             mavenVersion = defaultProvidedVersion()
+
         }
     }
 })
