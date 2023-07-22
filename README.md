@@ -5,7 +5,6 @@ another change.
 last line
 !
 !
-
 Check CSP
 
 another check
