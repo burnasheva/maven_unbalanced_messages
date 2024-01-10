@@ -6,6 +6,7 @@ import jetbrains.buildServer.configs.kotlin.triggers.vcs
 
 object RunTests : BuildType({
     name = "run tests"
+    description = "Run tests<br>DENIS DENIS DENIS"
 
     vcs {
         root(DslContext.settingsRoot)
