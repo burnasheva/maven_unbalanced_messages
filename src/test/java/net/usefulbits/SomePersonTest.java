@@ -10,6 +10,7 @@ public class SomePersonTest {
     @Test
     public void Test1() {
         System.out.println("##teamcity[blockOpened name='<CreateConnection>']");
+        
         System.out.println("Some output");
         System.out.println("##teamcity[blockClosed name='<CreateConnection>']");
         
