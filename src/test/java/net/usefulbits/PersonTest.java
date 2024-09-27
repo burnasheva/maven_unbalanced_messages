@@ -1,11 +1,12 @@
 package net.usefulbits;
 
 import org.junit.Ignore;
-
 import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class PersonTest {
+
+    private static String TEAMCITY_VERSION = "TEAMCITY_VERSION";
 
     @Test
     public void Test1() {
@@ -15,27 +16,22 @@ public class PersonTest {
         System.out.println("##teamcity[blockClosed name='<RiskReasonsTests.DeleteRiskReason>']");
         System.out.println("##teamcity[blockOpened name='<UserRolesTests.BulkImportUsersFromFile>']");
         System.out.println("##teamcity[blockOpened name='<ImportUsersFromFile>']");
-        
-        try{
-            Thread.sleep(10000);
-        } catch (InterruptedException ie){
-            System.out.println("Something went wrong");
-        }
+       
         System.out.println("##teamcity[blockClosed name='some_block']");
 
 
-        System.out.println("word");
+        System.out.println("word word");
         System.err.println("word");
 
         System.out.println("http://user:word@jetbrains.com");
         System.err.println("http://user:word@jetbrains.com");
 
         System.out.println("##teamcity[blockOpened name='some_block_2']");
+        System.out.println("Durchführungvermögen🫥🎃"); 
 
+        assertEquals(3, 3);
 
-        assertEquals(2, 2);
-
-        assertEquals("Name not saved correctly", "David", "David");
+        assertEquals("Name not saved correctly", "David", "David😦");
         assertEquals("Age not saved correctly 123456", 22, 22);
         System.out.println("##teamcity[blockClosed name='some_block_3']");
     }
@@ -65,7 +61,7 @@ public class PersonTest {
         System.out.println("##teamcity[blockOpened name='<Login>']");
 
         System.out.println("Login with User: test");
-        System.out.println("Logged in as: Name: 'administrator'");
+        System.out.println("Logged in as 💩: Name: 'administrator'");
         System.out.println("##teamcity[blockClosed name='<Login>']");
 
         System.out.println("##teamcity[blockOpened name='<CreateNewUserRole>']");
@@ -74,15 +70,17 @@ public class PersonTest {
 
 
         try{
-            Thread.sleep(10000);
+            if (System.getenv(TEAMCITY_VERSION) != null || !System.getenv("TEAMCITY_VERSION").isEmpty()){
+                Thread.sleep(100);
+            }
         } catch (InterruptedException ie){
             System.out.println("Something went wrong");
         }
         System.out.println("##teamcity[blockClosed name='some_block']");
 
 
-        System.out.println("word");
-        System.err.println("word");
+        System.out.println("word 👽");
+        System.err.println("word 🤖");
 
         System.out.println("http://user:word@jetbrains.com");
         System.err.println("http://user:word@jetbrains.com");
@@ -99,8 +97,11 @@ public class PersonTest {
 
     @Test
     public void TestDifferentLogic() {
+
         try{
-            Thread.sleep(10000);
+            if (System.getenv(TEAMCITY_VERSION) != null || !System.getenv("TEAMCITY_VERSION").isEmpty()){
+                Thread.sleep(100);
+            }
         } catch (InterruptedException ie){
             System.out.println("Something went wrong");
         }
@@ -110,13 +111,14 @@ public class PersonTest {
         System.out.println("word");
         System.err.println("word");
 
-        System.out.println("http://user:word@jetbrains.com");
+        System.out.println("http://user:word@jetbrains.com🦷");
         System.err.println("http://user:word@jetbrains.com");
 
         System.out.println("##teamcity[blockOpened name='some_block_2']");
 
 
-        assertEquals(2, 2);
+        assertEquals(4, 4);
+
 
         assertEquals("Name not saved correctly", "David", "David");
         assertEquals("Age not saved correctly 123456", 22, 22);
@@ -126,7 +128,9 @@ public class PersonTest {
     @Test
     public void TestCalculator() {
         try{
-            Thread.sleep(10000);
+            if (System.getenv(TEAMCITY_VERSION) != null || !System.getenv("TEAMCITY_VERSION").isEmpty()){
+                Thread.sleep(10000);
+            }
         } catch (InterruptedException ie){
             System.out.println("Something went wrong");
         }
@@ -154,12 +158,12 @@ public class PersonTest {
     }
 
     @Test
-    @Ignore("long name u")
+    //@Ignore("long name u")
     public void Test2() {
         System.out.println("##teamcity[blockOpened name='some_block']");
 
         assertEquals("David", "David");
-        assertEquals(28, 29);
+        assertEquals(28, 28);
     }
 
     @Test
@@ -167,12 +171,12 @@ public class PersonTest {
     public void Test3() {
         System.out.println("##teamcity[blockClosed name='some_block']");
 
-        assertEquals("Deleting person failed.", 0, 1);
+        assertEquals("Deleting person failed.", 1, 1);
     }
 
     @Test
     public void Test4(){
-        assertFalse(true);
+        assertFalse(false);
     }
     
     @Test
@@ -191,7 +195,7 @@ public class PersonTest {
     }
 
     @Test
-    @Ignore("ignore test with simple name")
+    //@Ignore("ignore test with simple name")
     public void shouldBeIgnored(){
         assertTrue(false);
     }
