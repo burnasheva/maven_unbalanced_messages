@@ -1,0 +1,39 @@
+NORMAL AGENT BRANCH
+
+docker run -it -d -e SERVER_URL="http://tcqa-branch.labs.intellij.net:8111" -e AGENT_NAME="normal agent core new" docker-registry.labs.intellij.net/teamcity-agent:2017.2.2.EAP-windowsservercore-1709
+
+docker run -it -d -e SERVER_URL="http://tcqa-branch.labs.intellij.net:8111" -e AGENT_NAME="normal agent core old" docker-registry.labs.intellij.net/teamcity-agent:2017.2.2.EAP-windowsservercore-ltsc2016
+
+docker run -it -d -e SERVER_URL="http://tcqa-branch.labs.intellij.net:8111" -e AGENT_NAME="normal agent nano new" docker-registry.labs.intellij.net/teamcity-agent:2017.2.2.EAP-nanoserver-1709
+
+docker run -it -d -e SERVER_URL="http://tcqa-branch.labs.intellij.net:8111" -e AGENT_NAME="normal agent nano old" docker-registry.labs.intellij.net/teamcity-agent:2017.2.2.EAP-nanoserver-sac2016
+
+MINIMAL AGENT BRANCH
+
+docker run -it -d -e SERVER_URL="http://tcqa-branch.labs.intellij.net:8111" -e AGENT_NAME="minimal agent core new" docker-registry.labs.intellij.net/teamcity-minimal-agent:2017.2.2.EAP-windowsservercore-1709
+
+docker run -it -d -e SERVER_URL="http://tcqa-branch.labs.intellij.net:8111" -e AGENT_NAME="minimal agent core old" docker-registry.labs.intellij.net/teamcity-minimal-agent:2017.2.2.EAP-windowsservercore-ltsc2016
+
+docker run -it -d -e SERVER_URL="http://tcqa-branch.labs.intellij.net:8111" -e AGENT_NAME="minimal agent nano new" docker-registry.labs.intellij.net/teamcity-minimal-agent:2017.2.2.EAP-nanoserver-1709
+
+docker run -it -d -e SERVER_URL="http://tcqa-branch.labs.intellij.net:8111" -e AGENT_NAME="minimal agent nano old" docker-registry.labs.intellij.net/teamcity-minimal-agent:2017.2.2.EAP-nanoserver-sac2016
+
+NORMAL AGENT TRUNK
+
+docker run -it -d -e SERVER_URL="http://tcqa-trunk.labs.intellij.net:8111" -e AGENT_NAME="normal agent core new" docker-registry.labs.intellij.net/teamcity-agent:2018.1.EAP-windowsservercore-1709
+
+docker run -it -d -e SERVER_URL="http://tcqa-trunk.labs.intellij.net:8111" -e AGENT_NAME="normal agent core old" docker-registry.labs.intellij.net/teamcity-agent:2018.1.EAP-windowsservercore-ltsc2016
+
+docker run -it -d -e SERVER_URL="http://tcqa-trunk.labs.intellij.net:8111" -e AGENT_NAME="normal agent nano new" docker-registry.labs.intellij.net/teamcity-agent:2018.1.EAP-nanoserver-1709
+
+docker run -it -d -e SERVER_URL="http://tcqa-trunk.labs.intellij.net:8111" -e AGENT_NAME="normal agent nano old" docker-registry.labs.intellij.net/teamcity-agent:2018.1.EAP-nanoserver-sac2016
+
+MINIMAL AGENT TRUNK
+
+docker run -it -d -e SERVER_URL="http://tcqa-trunk.labs.intellij.net:8111" -e AGENT_NAME="minimal agent core new" docker-registry.labs.intellij.net/teamcity-minimal-agent:2018.1.EAP-windowsservercore-1709
+
+docker run -it -d -e SERVER_URL="http://tcqa-trunk.labs.intellij.net:8111" -e AGENT_NAME="minimal agent core old" docker-registry.labs.intellij.net/teamcity-minimal-agent:2018.1.EAP-windowsservercore-ltsc2016
+
+docker run -it -d -e SERVER_URL="http://tcqa-trunk.labs.intellij.net:8111" -e AGENT_NAME="minimal agent nano new" docker-registry.labs.intellij.net/teamcity-minimal-agent:2018.1.EAP-nanoserver-1709
+
+docker run -it -d -e SERVER_URL="http://tcqa-trunk.labs.intellij.net:8111" -e AGENT_NAME="minimal agent nano old" docker-registry.labs.intellij.net/teamcity-minimal-agent:2018.1.EAP-nanoserver-sac2016
