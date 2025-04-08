@@ -89,6 +89,7 @@
 	<distributionManagement>
 		<snapshotRepository>
 			<id>nexus</id>
+			
 			<url>http://nexus-test.labs.intellij.net:8081/repository/maven-snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
